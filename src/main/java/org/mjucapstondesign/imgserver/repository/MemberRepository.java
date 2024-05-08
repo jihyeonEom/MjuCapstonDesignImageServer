@@ -19,7 +19,7 @@ import java.util.UUID;
 public class MemberRepository {
 
     private final List<Member> memberList;
-    private final String filePath = "/Users/eomjihyeon/Desktop/testImg/"; // 파일 업로드 경로
+    private final String filePath = ""; // 파일 업로드 경로
 
     public void getImageResult(ProcessBuilder processBuilder) {
         try{

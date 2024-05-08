@@ -2,7 +2,6 @@ package org.mjucapstondesign.imgserver.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.mjucapstondesign.imgserver.domain.Image;
 import org.mjucapstondesign.imgserver.dto.ResponseDto;
 import org.mjucapstondesign.imgserver.dto.response.IdListResponseDto;
 import org.mjucapstondesign.imgserver.dto.response.IdResponseDto;
@@ -26,7 +25,7 @@ public class MemberController {
     @GetMapping(value="images/{member_id}/result")
     public ResponseEntity<ResponseDto<Void>> getImageResult(@PathVariable("member_id") UUID memberId) throws IOException {
         // ai_server.py가 있는 디렉토리 절대경로
-        String path = "/Users/eomjihyeon/Desktop/class/CapstonDesign/plasticAIModel/Plastic_AI_v3/Plastic_AI/";
+        String path = "";
         this.memberService.getImageResult(memberId, path);
         return new ResponseEntity<>(HttpStatus.OK);
     }

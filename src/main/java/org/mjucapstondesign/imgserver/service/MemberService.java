@@ -3,14 +3,10 @@ package org.mjucapstondesign.imgserver.service;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.mjucapstondesign.imgserver.domain.Image;
-import org.mjucapstondesign.imgserver.dto.ResponseDto;
 import org.mjucapstondesign.imgserver.dto.response.IdListResponseDto;
 import org.mjucapstondesign.imgserver.dto.response.IdResponseDto;
 import org.mjucapstondesign.imgserver.repository.MemberRepository;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;

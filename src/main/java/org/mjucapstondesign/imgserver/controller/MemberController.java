@@ -22,6 +22,7 @@ public class MemberController {
 
     private final MemberService memberService;
 
+
     @GetMapping(value="images/{member_id}/result")
     public ResponseEntity<ResponseDto<Void>> getImageResult(@PathVariable("member_id") UUID memberId) throws IOException {
         // ai_server.py가 있는 디렉토리 절대경로

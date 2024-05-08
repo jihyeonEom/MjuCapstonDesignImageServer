@@ -19,7 +19,8 @@ import java.util.UUID;
 public class MemberRepository {
 
     private final List<Member> memberList;
-    private final String filePath = ""; // 파일 업로드 경로
+    // 파일 업로드 경로
+    private final String filePath = "";
 
     public void getImageResult(ProcessBuilder processBuilder) {
         try{
@@ -47,7 +48,6 @@ public class MemberRepository {
     }
 
     public UUID uploadImg(MultipartFile file) throws IOException {
-
         String fileName = file.getOriginalFilename(); // 파일 이름 저장
 
         File dest = new File(filePath + fileName);

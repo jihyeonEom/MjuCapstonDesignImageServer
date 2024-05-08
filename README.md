@@ -34,3 +34,5 @@
 // 파일 업로드 경로
     private final String filePath = "";
 ```
+
+6. java에서 cmd shell 명령어를 실행하도록 해서 python을 실행했습니다.<br/>
